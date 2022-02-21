@@ -1,0 +1,25 @@
+name: Trading Bot Runner Docs
+on:
+  workflow_dispatch:
+
+jobs:
+  clone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: trading-bot-software/trading-bot-runner
+          ref: gh-pages
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Move to pages folder
+        run: mv * pages | mkdir pages
+      
+      - name: Deploy Documentation
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: pages
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
