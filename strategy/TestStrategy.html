@@ -44,23 +44,18 @@
 </ul>
 <h3>Methods</h3>
 <dl>
-<dt id="trading_bot_runner.strategy.TestStrategy.TestStrategy.populate_buy_trend"><code class="name flex">
-<span>def <span class="ident">populate_buy_trend</span></span>(<span>self, dataframe: pandas.core.frame.DataFrame, dataframes: Dict[str, pandas.core.frame.DataFrame]) ‑> pandas.core.frame.DataFrame</span>
-</code></dt>
-<dd>
-<div class="desc"><p>Populates buy_trend for the given dataframe.</p></div>
-</dd>
 <dt id="trading_bot_runner.strategy.TestStrategy.TestStrategy.populate_indicators"><code class="name flex">
 <span>def <span class="ident">populate_indicators</span></span>(<span>self, dataframe: pandas.core.frame.DataFrame, timeframe: str) ‑> pandas.core.frame.DataFrame</span>
 </code></dt>
 <dd>
 <div class="desc"><p>Populates indicators for the given dataframe.</p></div>
 </dd>
-<dt id="trading_bot_runner.strategy.TestStrategy.TestStrategy.populate_sell_trend"><code class="name flex">
-<span>def <span class="ident">populate_sell_trend</span></span>(<span>self, dataframe: pandas.core.frame.DataFrame, dataframes: Dict[str, pandas.core.frame.DataFrame]) ‑> pandas.core.frame.DataFrame</span>
+<dt id="trading_bot_runner.strategy.TestStrategy.TestStrategy.populate_signals"><code class="name flex">
+<span>def <span class="ident">populate_signals</span></span>(<span>self, dataframe: pandas.core.frame.DataFrame, dataframes: Dict[str, pandas.core.frame.DataFrame]) ‑> pandas.core.frame.DataFrame</span>
 </code></dt>
 <dd>
-<div class="desc"><p>Populates sell_trend for the given dataframe.</p></div>
+<div class="desc"><p>Populates signals for the given dataframe.
+Also receives all dataframes processed.</p></div>
 </dd>
 </dl>
 </dd>
@@ -83,9 +78,8 @@
 <li>
 <h4><code><a title="trading_bot_runner.strategy.TestStrategy.TestStrategy" href="#trading_bot_runner.strategy.TestStrategy.TestStrategy">TestStrategy</a></code></h4>
 <ul class="">
-<li><code><a title="trading_bot_runner.strategy.TestStrategy.TestStrategy.populate_buy_trend" href="#trading_bot_runner.strategy.TestStrategy.TestStrategy.populate_buy_trend">populate_buy_trend</a></code></li>
 <li><code><a title="trading_bot_runner.strategy.TestStrategy.TestStrategy.populate_indicators" href="#trading_bot_runner.strategy.TestStrategy.TestStrategy.populate_indicators">populate_indicators</a></code></li>
-<li><code><a title="trading_bot_runner.strategy.TestStrategy.TestStrategy.populate_sell_trend" href="#trading_bot_runner.strategy.TestStrategy.TestStrategy.populate_sell_trend">populate_sell_trend</a></code></li>
+<li><code><a title="trading_bot_runner.strategy.TestStrategy.TestStrategy.populate_signals" href="#trading_bot_runner.strategy.TestStrategy.TestStrategy.populate_signals">populate_signals</a></code></li>
 </ul>
 </li>
 </ul>
