@@ -41,11 +41,29 @@
 <div class="desc"><p>Bot runner that performs trades and collects data and mantains state of bot.</p></div>
 <h3>Methods</h3>
 <dl>
+<dt id="trading_bot_runner.manager.Manager.compute"><code class="name flex">
+<span>async def <span class="ident">compute</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Run bot compute step.</p></div>
+</dd>
 <dt id="trading_bot_runner.manager.Manager.hearbeat"><code class="name flex">
 <span>async def <span class="ident">hearbeat</span></span>(<span>self)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>Checks and return that bot is still alive. Runs every day.</p></div>
+</dd>
+<dt id="trading_bot_runner.manager.Manager.main"><code class="name flex">
+<span>async def <span class="ident">main</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Run bot main loop.</p></div>
+</dd>
+<dt id="trading_bot_runner.manager.Manager.ping"><code class="name flex">
+<span>async def <span class="ident">ping</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
 </dd>
 <dt id="trading_bot_runner.manager.Manager.refresh_config"><code class="name flex">
 <span>async def <span class="ident">refresh_config</span></span>(<span>self)</span>
@@ -58,6 +76,12 @@
 </code></dt>
 <dd>
 <div class="desc"><p>Download data if it went stale.</p></div>
+</dd>
+<dt id="trading_bot_runner.manager.Manager.wait_until_next_minute"><code class="name flex">
+<span>async def <span class="ident">wait_until_next_minute</span></span>(<span>self, state)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Wait idle until next minute.</p></div>
 </dd>
 </dl>
 </dd>
@@ -80,9 +104,13 @@
 <li>
 <h4><code><a title="trading_bot_runner.manager.Manager" href="#trading_bot_runner.manager.Manager">Manager</a></code></h4>
 <ul class="">
+<li><code><a title="trading_bot_runner.manager.Manager.compute" href="#trading_bot_runner.manager.Manager.compute">compute</a></code></li>
 <li><code><a title="trading_bot_runner.manager.Manager.hearbeat" href="#trading_bot_runner.manager.Manager.hearbeat">hearbeat</a></code></li>
+<li><code><a title="trading_bot_runner.manager.Manager.main" href="#trading_bot_runner.manager.Manager.main">main</a></code></li>
+<li><code><a title="trading_bot_runner.manager.Manager.ping" href="#trading_bot_runner.manager.Manager.ping">ping</a></code></li>
 <li><code><a title="trading_bot_runner.manager.Manager.refresh_config" href="#trading_bot_runner.manager.Manager.refresh_config">refresh_config</a></code></li>
 <li><code><a title="trading_bot_runner.manager.Manager.refresh_data" href="#trading_bot_runner.manager.Manager.refresh_data">refresh_data</a></code></li>
+<li><code><a title="trading_bot_runner.manager.Manager.wait_until_next_minute" href="#trading_bot_runner.manager.Manager.wait_until_next_minute">wait_until_next_minute</a></code></li>
 </ul>
 </li>
 </ul>
