@@ -53,11 +53,11 @@
 <dd>
 <div class="desc"><p>Checks and return that bot is still alive. Runs every day.</p></div>
 </dd>
-<dt id="trading_bot_runner.manager.Manager.insert_empty_config_if_doesnt_exist"><code class="name flex">
-<span>def <span class="ident">insert_empty_config_if_doesnt_exist</span></span>(<span>self)</span>
+<dt id="trading_bot_runner.manager.Manager.insert_default_if_doesnt_exist"><code class="name flex">
+<span>def <span class="ident">insert_default_if_doesnt_exist</span></span>(<span>self, market)</span>
 </code></dt>
 <dd>
-<div class="desc"></div>
+<div class="desc"><p>Inserts empty config if it doesn't exist in database.</p></div>
 </dd>
 <dt id="trading_bot_runner.manager.Manager.main"><code class="name flex">
 <span>async def <span class="ident">main</span></span>(<span>self)</span>
@@ -69,7 +69,7 @@
 <span>async def <span class="ident">ping</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<div class="desc"></div>
+<div class="desc"><p>Pings bot to check if it is alive. This also wakes bot up.</p></div>
 </dd>
 <dt id="trading_bot_runner.manager.Manager.refresh_config"><code class="name flex">
 <span>async def <span class="ident">refresh_config</span></span>(<span>self)</span>
@@ -112,7 +112,7 @@
 <ul class="">
 <li><code><a title="trading_bot_runner.manager.Manager.compute" href="#trading_bot_runner.manager.Manager.compute">compute</a></code></li>
 <li><code><a title="trading_bot_runner.manager.Manager.hearbeat" href="#trading_bot_runner.manager.Manager.hearbeat">hearbeat</a></code></li>
-<li><code><a title="trading_bot_runner.manager.Manager.insert_empty_config_if_doesnt_exist" href="#trading_bot_runner.manager.Manager.insert_empty_config_if_doesnt_exist">insert_empty_config_if_doesnt_exist</a></code></li>
+<li><code><a title="trading_bot_runner.manager.Manager.insert_default_if_doesnt_exist" href="#trading_bot_runner.manager.Manager.insert_default_if_doesnt_exist">insert_default_if_doesnt_exist</a></code></li>
 <li><code><a title="trading_bot_runner.manager.Manager.main" href="#trading_bot_runner.manager.Manager.main">main</a></code></li>
 <li><code><a title="trading_bot_runner.manager.Manager.ping" href="#trading_bot_runner.manager.Manager.ping">ping</a></code></li>
 <li><code><a title="trading_bot_runner.manager.Manager.refresh_config" href="#trading_bot_runner.manager.Manager.refresh_config">refresh_config</a></code></li>
