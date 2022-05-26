@@ -85,27 +85,27 @@
 </dd>
 </dl>
 </dd>
-<dt id="trading_bot_runner.manager.Manager"><code class="flex name class">
-<span>class <span class="ident">Manager</span></span>
+<dt id="trading_bot_runner.manager.GroupManager"><code class="flex name class">
+<span>class <span class="ident">GroupManager</span></span>
 <span>(</span><span>bot_group: str, redis_host: str, database: trading_bot_common.database.Database, default_market: str = 'binance')</span>
 </code></dt>
 <dd>
 <div class="desc"><p>Bot runner that performs trades and collects data and mantains state of multiple bots.</p></div>
 <h3>Methods</h3>
 <dl>
-<dt id="trading_bot_runner.manager.Manager.create_bot"><code class="name flex">
+<dt id="trading_bot_runner.manager.GroupManager.create_bot"><code class="name flex">
 <span>def <span class="ident">create_bot</span></span>(<span>self, bot_id: str)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>Add a new bot to manage.</p></div>
 </dd>
-<dt id="trading_bot_runner.manager.Manager.main"><code class="name flex">
+<dt id="trading_bot_runner.manager.GroupManager.main"><code class="name flex">
 <span>async def <span class="ident">main</span></span>(<span>self)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>Run bot main loop.</p></div>
 </dd>
-<dt id="trading_bot_runner.manager.Manager.wait_until_next_minute"><code class="name flex">
+<dt id="trading_bot_runner.manager.GroupManager.wait_until_next_minute"><code class="name flex">
 <span>async def <span class="ident">wait_until_next_minute</span></span>(<span>self)</span>
 </code></dt>
 <dd>
@@ -142,11 +142,11 @@
 </ul>
 </li>
 <li>
-<h4><code><a title="trading_bot_runner.manager.Manager" href="#trading_bot_runner.manager.Manager">Manager</a></code></h4>
+<h4><code><a title="trading_bot_runner.manager.GroupManager" href="#trading_bot_runner.manager.GroupManager">GroupManager</a></code></h4>
 <ul class="">
-<li><code><a title="trading_bot_runner.manager.Manager.create_bot" href="#trading_bot_runner.manager.Manager.create_bot">create_bot</a></code></li>
-<li><code><a title="trading_bot_runner.manager.Manager.main" href="#trading_bot_runner.manager.Manager.main">main</a></code></li>
-<li><code><a title="trading_bot_runner.manager.Manager.wait_until_next_minute" href="#trading_bot_runner.manager.Manager.wait_until_next_minute">wait_until_next_minute</a></code></li>
+<li><code><a title="trading_bot_runner.manager.GroupManager.create_bot" href="#trading_bot_runner.manager.GroupManager.create_bot">create_bot</a></code></li>
+<li><code><a title="trading_bot_runner.manager.GroupManager.main" href="#trading_bot_runner.manager.GroupManager.main">main</a></code></li>
+<li><code><a title="trading_bot_runner.manager.GroupManager.wait_until_next_minute" href="#trading_bot_runner.manager.GroupManager.wait_until_next_minute">wait_until_next_minute</a></code></li>
 </ul>
 </li>
 </ul>
