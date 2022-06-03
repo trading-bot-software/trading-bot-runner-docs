@@ -14,7 +14,7 @@ jobs:
           token: ${{ secrets.PAT_TOKEN }}
 
       - name: Move to pages folder
-        run: mv * pages | mkdir pages
+        run: mkdir pages & mv * pages
       
       - name: Deploy Documentation
         uses: s0/git-publish-subdir-action@develop
